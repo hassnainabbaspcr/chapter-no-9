@@ -1,0 +1,9 @@
+import random
+
+# List containing 10 numbers and 5 letters
+lottery_items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'A', 'B', 'C', 'D', 'E']
+
+# Randomly select 4 unique items from the list
+winning_ticket = random.sample(lottery_items, 4)
+
+print(f"Any ticket matching these four items wins a prize: {winning_ticket}")
