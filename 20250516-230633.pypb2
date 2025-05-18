@@ -1,0 +1,34 @@
+class User:
+    def __init__(self, first_name, last_name, age, email, location):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.age = age
+        self.email = email
+        self.location = location
+
+    def describe_user(self):
+        print(f"User Information:")
+        print(f"Name: {self.first_name} {self.last_name}")
+        print(f"Age: {self.age}")
+        print(f"Email: {self.email}")
+        print(f"Location: {self.location}")
+
+    def greet_user(self):
+        print(f"Hello {self.first_name}, welcome back!")
+
+# Creating multiple instances of User
+user1 = User("Ali", "Khan", 25, "ali.khan@example.com", "Lahore")
+user2 = User("Sara", "Ahmed", 30, "sara.ahmed@example.com", "Karachi")
+user3 = User("John", "Doe", 28, "john.doe@example.com", "Islamabad")
+
+# Calling methods for each user
+user1.describe_user()
+user1.greet_user()
+print()
+
+user2.describe_user()
+user2.greet_user()
+print()
+
+user3.describe_user()
+user3.greet_user()
