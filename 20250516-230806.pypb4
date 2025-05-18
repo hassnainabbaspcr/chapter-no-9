@@ -1,0 +1,7 @@
+# admin_test.py
+
+from users import Admin
+
+admin_user = Admin("Ahsan", "Malik", 35, "ahsan.malik@example.com")
+admin_user.describe_user()
+admin_user.privileges.show_privileges()
